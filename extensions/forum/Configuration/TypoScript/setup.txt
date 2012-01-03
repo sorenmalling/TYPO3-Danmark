@@ -1,0 +1,30 @@
+plugin.tx_forum {
+	view {
+		templateRootPath = {$plugin.tx_forum.view.templateRootPath}
+		partialRootPath = {$plugin.tx_forum.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_forum.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_forum.persistence.storagePid}
+	}
+}
+
+plugin.tx_forum._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-forum table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-forum table th {
+		font-weight:bold;
+	}
+
+	.tx-forum table td {
+		vertical-align:top;
+	}
+)
