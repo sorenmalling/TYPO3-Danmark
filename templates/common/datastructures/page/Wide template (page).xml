@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<menu_main type="array">
+				<tx_templavoila type="array">
+					<title>Main menu</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.menu.main</TypoScriptObjPath>
+				</tx_templavoila>
+			</menu_main>
+			<field_content type="array">
+				<tx_templavoila type="array">
+					<title>Content area</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>ce</eType>
+					<TypoScript>10= RECORDS
+10.source.current=1
+10.tables = tt_content
+10.wrap = |</TypoScript>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>1</enableDragDrop>
+				</tx_templavoila>
+				<TCEforms type="array">
+					<label>Content area</label>
+					<config type="array">
+						<type>group</type>
+						<internal_type>db</internal_type>
+						<allowed>tt_content</allowed>
+						<size>5</size>
+						<maxitems>200</maxitems>
+						<minitems>0</minitems>
+						<multiple>1</multiple>
+						<show_thumbs>1</show_thumbs>
+					</config>
+				</TCEforms>
+			</field_content>
+		</el>
+	</ROOT>
+</T3DataStructure>
