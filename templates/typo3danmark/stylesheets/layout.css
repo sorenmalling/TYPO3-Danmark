@@ -1,9 +1,6 @@
 body {
 	font-family: Georgia;
 	font-size: 1em;
-	/*background-image: url('headerbackground.gif');
-	background-position: top left;
-	background-repeat: repeat-x;*/
 }
 
 a {
@@ -130,13 +127,13 @@ div.infobox h3, div.infobox h2 {
 }
 
 div.header-logo-mini{
-	background-image: url('mini-logo.png');
+	background-image: url('../images/mini-logo.png');
 	background-position: 4 20;
 	background-repeat: no-repeat;
 }
 
 div.header-logo-full{
-	background-image: url('tug-logo.gif');
+	background-image: url('../images/tug-logo.gif');
 	background-position: 4 20;
 	background-repeat: no-repeat;
 }
@@ -146,9 +143,6 @@ div.header {
 	height: 120px;
 	position: fixed;
 	background-color: #ffffff;
-	/*background-image: url('tug-logo.gif');
-	background-position: 4 20;
-	background-repeat: no-repeat;*/
 	z-index: 1000;
 	position: fixed;
 	-webkit-box-shadow: 0 10px 6px -6px lightgrey;
@@ -175,7 +169,6 @@ div.footer {
 	margin-top: 100px;
 	font-size: 0.9em;
 	color: grey;
-	/*background-image: url('gradient.png');*/
 }
 
 div.footer h3 {
