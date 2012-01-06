@@ -1,3 +1,3 @@
 [submodule "extensions/forum"]
 	path = extensions/forum
-	url = git@github.com:sorenmalling/TYPO3-Forum.git
+	url = https://github.com/sorenmalling/TYPO3-Forum.git
