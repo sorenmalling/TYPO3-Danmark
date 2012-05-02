@@ -89,6 +89,8 @@ $(document).ready(function() {
 		//console.log($("div.content").offset());
 	});
 	
+	$('slider ul').tabs();
+	
 	$(window).scroll(function(){
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop != 0) {

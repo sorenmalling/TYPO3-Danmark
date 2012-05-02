@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<header type="array">
+				<tx_templavoila type="array">
+					<title>Header</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.header</TypoScriptObjPath>
+				</tx_templavoila>
+			</header>
+			<news type="array">
+				<tx_templavoila type="array">
+					<title>News</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>TypoScriptObject</eType>
+					<proc type="array">
+						<int>0</int>
+						<HSC>0</HSC>
+						<stdWrap></stdWrap>
+					</proc>
+					<preview></preview>
+					<TypoScriptObjPath>lib.news</TypoScriptObjPath>
+				</tx_templavoila>
+			</news>
+		</el>
+	</ROOT>
+</T3DataStructure>

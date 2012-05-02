@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Share';
+    src: url('../../common/fonts/share-regular-webfont.eot');
+    src: url('../../common/fonts/share-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../common/fonts/share-regular-webfont.woff') format('woff'),
+         url('../../common/fonts/share-regular-webfont.ttf') format('truetype'),
+         url('../../common/fonts/share-regular-webfont.svg#Share-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+	font-family: arial;
+	font-size: 0.8em;
+	background-color: #ececec;
+}
+
+div.wrapper {
+	margin: 0px auto;
+	width: 982px;
+	min-height: 100px;
+	background-color: #ffffff;
+}
+
+h2 {
+	margin-top: 20px;
+	font-family: Share;
+	font-size: 16pt;
+	font-weight: normal;
+	margin-left: 20px;
+}
+h3 {
+	font-family: Share;
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+header {
+	height: 100px;
+	background-image: url('../images/logo.png');
+	background-position: 20px center;
+	background-repeat: no-repeat;
+}
+
+header nav a {
+	color: #000000;
+	text-decoration: none;
+}
+
+footer {
+	padding: 10px;
+	text-align: center;
+}
+
+section.news {
+	height: 300px;
+}
+
+section.news ul li {
+	position: absolute;
+}
+
+section.news ul li div {
+	color: #fff;
+	background-image: url('../images/transparent.png');
+	position: absolute;
+	top: 33px;
+	left: 30px;
+	width: 433px;
+	height: 175px;
+	padding: 27px 40px 13px;
+}
+
+a.button {
+	display: block;
+	text-align: center;
+	height: 16px;
+	font-family: Share-Regular;
+	font-size: 1.1em;
+	text-decoration: none;
+	width: 139px;
+	padding-top: 3px;
+	/*padding: 3px 5px 3px 5px;
+	display: inline-block;*/
+}
+
+a.button.orange {
+	background-image: url('../images/button-orange.png');
+	color: #ffffff;
+}
