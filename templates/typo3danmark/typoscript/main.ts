@@ -9,4 +9,10 @@ page {
 		navigation = {$typo3danmarkTemplateFolder}stylesheets/navigation.css
 		forms = {$typo3danmarkTemplateFolder}stylesheets/forms.css
 	}
+	includeJS {
+		boxslider = https://raw.github.com/ekallevig/jShowOff/master/jquery.jshowoff.min.js
+		boxslider.external = 1
+		slider = {$typo3danmarkTemplateFolder}javascript/slider.js
+	}
+
 }

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
+	<ROOT type="array">
+		<tx_templavoila type="array">
+			<title>ROOT</title>
+			<description>Select the HTML element on the page which you want to be the overall container element for the template.</description>
+			<tags></tags>
+			<preview></preview>
+		</tx_templavoila>
+		<type>array</type>
+		<el type="array">
+			<content type="array">
+				<tx_templavoila type="array">
+					<title>Content</title>
+					<sample_data type="array">
+						<numIndex index="0"></numIndex>
+					</sample_data>
+					<eType>none</eType>
+					<TypoScript><![CDATA[
+						10 = CONTENT
+						10 {
+							table = tx_news_domain_model_news
+							wrap = <section class="news"><ul>|</ul></section>
+							select {
+								pidInList = 19
+								orderBy = sorting
+								max = 4
+							}
+							renderObj = COA
+							renderObj {
+								wrap = <li>|</li>
+								5 = CONTENT
+								5 {
+									table = tx_news_domain_model_media
+									select {
+										pidInList = 19
+										where = parent=###media###
+										orderBy = sorting
+										max = 1
+										markers {
+											media.field = uid
+										}
+									}
+									renderObj = IMAGE
+									renderObj {
+										file {
+											import = uploads/tx_news/
+											import {
+												field = image
+												listNum = 0
+											}
+											width = 982c
+											height = 282c
+										}
+									}
+								}
+
+								10 = COA
+								10 {
+									wrap = <div>|</div>
+									5 = TEXT
+									5 {
+										field = title
+										wrap = <h3>|</h3>
+									}
+									10 = TEXT
+									10 {
+										field = teaser // bodytext
+										wrap <p>|</p>
+									}
+									15 = TEXT
+									15 {
+										wrap = <p>|</p>
+										value = Læs mere
+										typolink {
+											parameter = 5
+											ATagParams = class="button orange"
+										}
+									}
+								}
+							}
+						}
+					]]></TypoScript>
+					<preview></preview>
+					<oldStyleColumnNumber>0</oldStyleColumnNumber>
+					<enableDragDrop>0</enableDragDrop>
+				</tx_templavoila>
+			</content>
+		</el>
+	</ROOT>
+</T3DataStructure>
