@@ -7,5 +7,6 @@ page {
 		main = {$typo3danmarkTemplateFolder}stylesheets/main.css
 		columns = {$typo3danmarkTemplateFolder}stylesheets/columns.css
 		navigation = {$typo3danmarkTemplateFolder}stylesheets/navigation.css
+		forms = {$typo3danmarkTemplateFolder}stylesheets/forms.css
 	}
 }
