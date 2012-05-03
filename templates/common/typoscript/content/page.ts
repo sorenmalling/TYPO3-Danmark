@@ -6,7 +6,7 @@ page {
 	}
 	10 = USER
 	10 {
-		userFunc = tx_templavoila_pi1->main
+		userFunc = tx_templavoila_pi1->main_page
 	}
 	typeNum = 0
 	includeCSS {
