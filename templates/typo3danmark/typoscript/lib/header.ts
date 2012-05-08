@@ -2,11 +2,13 @@ lib.header = COA
 lib.header {
 	5 = IMAGE
 	5 {
-		file = fileadmin/clear.gif
+		file = fileadmin/templates/common/images/clear.gif
 		file {
 			width = 150
 			height = 100
 		}
+		altText = TYPO3 Danmark
+		titleText = TYPO3 Danmark
 		stdWrap {
 			typolink {
 				parameter = 1
