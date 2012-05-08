@@ -1,1 +1,0 @@
-plugin.tx_forum.persistence.storagePid = 22
